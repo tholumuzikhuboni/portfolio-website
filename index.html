@@ -1129,7 +1129,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form onsubmit="sendEmail()" class="form" data-form>
+          <form onsubmit="sendEmail(event); return false;" class="form" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
@@ -1153,46 +1153,7 @@
     </div>
 
   </main>
-<script>
-	// Email sender 
-function sendEmail() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
 
-  const params = {
-    user_name: name,
-    user_email: email,
-    user_message: message
-  };
-  const Tparams = {
-    user_name: name,
-    user_email: email,
-
-  };
-
-  console.log("Sending email with params:", params);
-  // Send email to admin
-  emailjs.send("service_3ovd4zr", "template_6smdvnd", params)
-    .then(function (response) {
-      console.log('Admin email sent successfully:', response);
-    })
-    .catch(function (error) {
-      console.error('Failed to send admin email. Error:', error);
-    });
-
-  // Send thank-you email to user
-  emailjs.send("service_3ovd4zr", "template_5px6g9g", Tparams)
-    .then(function (response) {
-      console.log('Thank-you email sent successfully:', response);
-      alert("Thanks " + name + " For joining ahkamboh 😊. We will send you responsive email Soon");
-    })
-    .catch(function (error) {
-      console.error('Failed to send thank-you email. Error:', error);
-    });
-	}
-	
-</script>
   <!--
     - custom js link
   -->
