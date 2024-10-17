@@ -1,4 +1,4 @@
-# Tholumuzi Portfolio Website
+# Tholumuzi Portfolio
 ## Preview
 
 ![Tholumuzi Khuboni](./images/tholumuzi-portfolio.png)
