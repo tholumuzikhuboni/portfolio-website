@@ -42,4 +42,4 @@ This project is open source. You can use it freely, but credit is appreciated.
 
 Feel free to connect with me via the following platforms:
 
-- GitHub: [github.com/tholumuzikhuboni](https://github.com/tholumuzikhuboni)
+- GitHub: [/tholumuzikhuboni](https://github.com/tholumuzikhuboni)
